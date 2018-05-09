@@ -1,0 +1,1 @@
+I"Ôfunction(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<h1> Thank you for your contact</h1>\n\n<a href="/contact/".', id,' > Your Contact </a>\n');}return __p.join('');}:ET

@@ -1,0 +1,1 @@
+I"/function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<h1>New test</h1>\n\n<form id="new-test" name="test">\n  <div class="actions">\n    <input type="submit" value="Create Test" />\n  </div>\n\n</form>\n\n<a href="#/index">Back</a>\n');}return __p.join('');}:ET

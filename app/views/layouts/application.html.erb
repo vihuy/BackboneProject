@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BackBone</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+<script type="text/javascript">
+  //window.indexView = new BackBone.Views.Users.IndexView();
+  //indexView.render();
+  window.router = new myRouter();
+  Backbone.history.start({pushState:true});
+
+$(function(){
+
+  $('a').click(function(){
+    router.navigate($(this).attr('href'), {trigger: true});
+    return false;
+  });
+});
+</script>

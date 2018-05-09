@@ -1,0 +1,1 @@
+I"function(obj){var __p=[],print=function(){__p.push.apply(__p,arguments);};with(obj||{}){__p.push('<h1> Show User </h1>\n<div>\n  First Name: 123\n  ',  user.first_name ,'<br/>\n  Last Name:  ',  user.last_name ,'\n</div>\n\n<a href="#/index">Back</a>\n');}return __p.join('');}:ET

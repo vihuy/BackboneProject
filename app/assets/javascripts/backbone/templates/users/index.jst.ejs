@@ -1,0 +1,39 @@
+<h1>Listing users</h1>
+<h2> <a class="btn btn-success" href="/new">New User</a> </h2>
+<div class="row">
+  <div class="col-sm-6">
+    <table class="table table-bordered" id="users-table">
+      <tr>
+        <th>No </th>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th> Email </th>
+        <th> # </th>
+        <th> # </th>
+      </tr>
+      <% _.each(userList,function(user){ %>
+        <tr>
+          <td><%= user.id %> </td>
+          <td><%= user.first_name %> </td>
+          <td><%= user.last_name %> </td>
+          <td><%= user.email %> </td>
+          <td> <a> Edit </a> </td>
+          <td> <a> Delete </a> </td>
+
+        </tr>
+
+      <% }); %>
+    </table>
+  </div>
+</div>
+
+<br/>
+
+
+<script>
+$('a').click(function(){
+    router.navigate($(this).attr('href'), {trigger: true});
+    return false;
+  });
+</script>
+
